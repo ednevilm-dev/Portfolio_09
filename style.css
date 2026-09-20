@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+    background-color: #1f242d;
+    color: #ffffff;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: #191c24;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.logo span {
+    color: #00eeff;
+}
+
+nav a {
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00eeff;
+}
+
+section {
+    min-height: 100vh;
+    padding: 120px 10% 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#servicos, #skills, #projectos, #educacao, #experiencia, #contactos {
+    scroll-margin-top: 80px;
+}
+
+/* HOME */
+.home {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    min-height: 100vh;
+}
+
+.home-img img {
+    width: 350px;
+    height: 450px;
+    border-radius: 10%;
+    object-fit: cover;
+    border: 4px solid #00eeff;
+    box-shadow: 0 0 20px #00eeff;
+}
+
+.home-contact h1 {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.home-contact h1 span {
+    color: #00eeff;
+}
+
+.home-contact h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.home-contact h3 span {
+    color: #00eeff;
+}
+
+.home-contact p {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+}
+
+/* BOTÃO DOWNLOAD DO CV */
+.btn-cv {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 28px;
+    margin-top: 25px;
+    background: #00eeff;
+    color: #1f242d;
+    border: 2px solid #00eeff;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.btn-cv:hover {
+    background: transparent;
+    color: #00eeff;
+    box-shadow: 0 0 15px #00eeff;
+    transform: translateY(-3px);
+}
+
+/* BARRA DE LISTRAS */
+.barra-listras {
+    width: 100%;
+    height: 2px;
+    background: repeating-linear-gradient(
+        45deg,
+        #3a6063,
+        #3a6063 15px,
+        #191c24 15px,
+        #191c24 30px
+    );
+    background-size: 42px 42px;
+    animation: mover-listras 1s linear infinite;
+    box-shadow: 0 0 10px rgba(0, 238, 255, 0.5);
+}
+
+@keyframes mover-listras {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 42px 0;
+    }
+}
+
+.titulo-seccao {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.titulo-seccao span {
+    color: #00eeff;
+}
+
+/* GRELHA E CARDS DE PROJECTOS/SERVIÇOS */
+.servicos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card-servico {
+    background-color: #323946;
+    padding: 30px 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-servico i {
+    font-size: 40px;
+    color: #00eeff;
+    margin-bottom: 15px;
+}
+
+.card-servico h3 {
+    margin-bottom: 10px;
+}
+
+.card-servico:hover {
+    background-color: #3b4454;
+    box-shadow: 0 8px 15px rgba(0, 238, 255, 0.3);
+    transform: translateY(-5px);
+}
+
+/* BOTÃO DENTRO DOS PROJECTOS */
+.btn-projeto {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 18px;
+    background: #00eeff;
+    color: #1f242d;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.btn-projeto:hover {
+    box-shadow: 0 0 10px #00eeff;
+    transform: translateY(-2px);
+}
+
+/*barrrrrrrrrrrrrrasss*/
+
+.skill-bar-container {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.skill-bar {
+    height: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.skill-per {
+    height: 100%;
+    background-color: #00eeff; /* Substitui pela cor principal do teu tema se for diferente */
+    border-radius: 10px;
+    transition: width 0.5s ease-in-out;
+}
+
+/*fimmm barrrrrrrrrrrrrrrrrasssssss*/
+
+/* CONTACTOS */
+.contactos form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contactos label {
+    font-weight: 500;
+}
+
+.contactos input, .contactos textarea {
+    width: 100%;
+    padding: 12px;
+    background: #323946;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.contactos input:focus, .contactos textarea:focus {
+    outline: none;
+    border-color: #00eeff;
+}
+
+.btn-submit {
+    padding: 12px;
+    background: #00eeff;
+    color: #1f242d;
+    border: none;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-submit:hover {
+    box-shadow: 0 0 10px #00eeff;
+}
+
+/* REDES SOCIAIS */
+.redes-sociais {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.redes-sociais a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    background: transparent;
+    border: 2px solid #00eeff;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00eeff;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.redes-sociais a:hover {
+    background: #00eeff;
+    color: #1f242d;
+    box-shadow: 0 0 15px #00eeff;
+    transform: translateY(-3px);
+}
+
+
+/*style p/ barras de dominio nas Skills */
+.skill-bar-container {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.skill-bar {
+    height: 8px;
+    background-color: black;   /*fundo das barras skills*/
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.skill-per {
+    height: 100%;
+    background-color: #00eeff; /* Mantém a cor azul/ciano do tema */
+    border-radius: 10px;
+    transition: width 0.5s ease-in-out;
+}
+/*barrrrrrrrrrassss %%%%%%%*/
+
+
+/*ultima animationnnnnnnnnnnnnnnn*/
+
+/* Destaque para o número na secção de estatísticas */
+.numero-estatistica {
+    font-size: 38px;
+    font-weight: 700;
+    color: #fff;
+    margin: 10px 0 5px;
+}
+
+/*ffffffffffffff*/
+
+.footer {
+    font-family: 'Courier New', monospace;
+    padding: 2%;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: gray;
+    background-color: #191c24;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 900px) {
+    .servicos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .servicos-grid {
+        grid-template-columns: 1fr;
+    }
+}

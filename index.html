@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfólio | Ednevil Mosley</title>
+
+    <!--pra importar a biblioteca externa de ícones (FontAwesome) via CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <header>    
+        <a href="#home" class="logo"><span>Ednevil</span> Mosley</a>
+        <nav>
+            <a href="#home" class="active">Página Inicial</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#skills">Skills</a>
+            <a href="#projectos">Projectos</a>
+            <a href="#educacao">Educação</a>
+            <a href="#experiencia">Experiência</a>
+            <a href="#contactos">Contactos</a>
+        </nav>
+    </header> 
+
+    <section class="home" id="home">
+        <div class="home-img">                  <!--container para guardar e posicionar a fotografiya-->
+            <img src="minha_foto.jpg" alt="Foto de Ednevil Mosley">
+        </div>                                                  
+        
+        <div class="home-contact">                   <!--contentor do texto no inicio-->
+            <h1>Olá, aqui é <span>Ednevil</span></h1>   <br>
+            <h3 class="typing-text">Sou um <span>Técnico de Suporte Informático</span></h3>
+            <p>Especialista no suporte técnico, manutenção de sistemas e administração de infraestruturas tecnológicas. Dedicado a resolver problemas técnicos de hardware e redes de forma eficiente.</p>
+            
+            <!-- Btn para Baixar o CV-->
+            <a href="meu_cv.pdf" download="CV_Ednevil_Mosley.pdf" class="btn-cv">
+                <i class="fa-solid fa-download"></i> Download CV
+            </a>
+
+            <!-- Redes Sociais em Bolas -->
+            <div class="redes-sociais">
+                <a href="https://wa.me/258848749094" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://github.com/ednevilm-dev" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://x.com/ednevilm" target="_blank" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>                                  <!--contentor de apresentação acab aqui-->
+    </section>                                  <!-- end da principal secção-->
+
+
+
+
+
+<!--loooooooopinnnnn-->     <div class="barra-listras"></div>         <!--fimmmmmmmm loopin-->
+
+    <section class="servicos" id="servicos">                        <!--seccao dos services-->
+        <h2 class="titulo-seccao">Meus <span>Serviços</span></h2>   <!--titulo da section-->
+        <div class="servicos-grid">                                 <!--contentor em formato de grelha para organizar os cartões de serviços-->  
+            
+            <div class="card-servico">              <!--cartao individual 1o servico -->
+                <i class="fa-solid fa-laptop-code"></i>             <!--icon representativo de computador do FontAwesome-->
+                <h3>Suporte Técnico</h3>                           <!-- 1o servic-->
+                <p>Diagnóstico, resolução de problemas de hardware e configuração de sistemas operativos.</p>
+            </div>        <!--fim-->
+            
+            <div class="card-servico">                              <!-- Cartão do 2nd servic-->
+                <i class="fa-solid fa-network-wired"></i>        
+                <h3>Redes de Computadores</h3>                    <!-- titulo 2nd servic -->
+                <p>Montagem, configuração e manutenção de cablagens estruturadas e routers.</p> <!--description sobre redes-->
+            </div>                                                <!-- fim segundo cartão de servic -->
+
+            <div class="card-servico">                             <!-- Cartão 3o servic-->
+                <i class="fa-solid fa-code"></i>             <!-- icon programmin/code-->
+                <h3>Desenvolvimento Web</h3>
+                <p>Criação de páginas web modernas e responsivas utilizando HTML5 e CSS3.</p>
+            </div>                                            <!-- the end of 3rd servic-->
+        </div>                                                <!--fim da grelha de servicos-->
+    </section>                                     <!-- fim da section de servicos-->                  
+
+
+<!--loooooooopinnnnn-->     <div class="barra-listras"></div>         <!--fimmmmmmmm loopin-->
+
+    <section class="skills" id="skills">               <!--seccao das skills-->
+        <h2 class="titulo-seccao">Minhas <span>Skills</span></h2>      
+        <div class="servicos-grid">                     <!--contentor em grelha para alinhar as habilidades -->
+            
+            <div class="card-servico">                  <!-- cartao para a skill de hardware-->
+                <i class="fa-solid fa-microchip"></i>   <!-- Ícone de processador-->
+                <h3>Manutenção de Hardware</h3>
+                <p>Montagem, limpeza preventiva/corretiva e substituição de componentes eletrónicos.</p>
+                
+                <!-- Barra de Progresso -->
+                <div class="skill-bar-container">
+                    <div class="skill-info">
+                        <span>Domínio</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-per" style="width: 60%;"></div>
+                    </div>
+                </div>
+            </div>                                      <!-- Fim do cartão de habilidade-->
+
+            <div class="card-servico">                   <!--cartao para habilidade em SO's-->
+                <i class="fa-brands fa-linux"></i>     <!--icon d'linux -->
+                <h3>Sistemas Operativos</h3>
+                <p>Instalação, formatação e configuração de Windows e distribuições Linux.</p>
+                
+                <!-- Barra de Progresso -->
+                <div class="skill-bar-container">
+                    <div class="skill-info">
+                        <span>Domínio</span>
+                        <span>100%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-per" style="width: 100%;"></div>
+                    </div>
+                </div>
+            </div>               <!--fim do card de skills -->
+
+            <div class="card-servico">                   <!-- card habilidade em support-->
+                <i class="fa-solid fa-headset"></i>       <!--icone atendimento-->
+                <h3>Atendimento & Helpdesk</h3>
+                <p>Atendimento ao utilizador, gestão de chamados e suporte remoto/presencial.</p>
+                
+                <!-- Barra de Progresso -->
+                <div class="skill-bar-container">
+                    <div class="skill-info">
+                        <span>Domínio</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-per" style="width: 85%;"></div>
+                    </div>
+                </div>
+            </div>                                      <!--fim do cartao support  -->
+            
+        </div>                                       <!-- Fim da grelha de habilidades-->
+    </section>                                 <!-- Fim da secção de habilidades -->
+
+<!--looooooooooopinnnnn-->    <div class="barra-listras"></div>     <!--fimmmmmmmm loopin-->
+
+    <section id="projectos">
+        <h2 class="titulo-seccao">Meus <span>Projectos</span></h2>
+        
+        <div class="servicos-grid">
+            <div class="card-servico">
+                <i class="fa-solid fa-globe"></i>
+                <h3>Website em Google Sites</h3>
+                <p>Desenvolvimento de uma plataforma web intuitiva em Google Sites, focando no design visual, estruturação de conteúdos e facilidade de navegação.</p>
+                
+                <a href="https://sites.google.com/view/e-cuna/p%C3%A1gina-inicial" target="_blank" class="btn-projeto">Visitar Site</a>
+            </div>
+            
+            <div class="card-servico">                 <!-- Projecto 2-->
+                <i class="fa-solid fa-code"></i>
+                <h3>Portfólio Web Responsivo</h3>
+                <p>Criação de interface web moderna utilizando HTML5 e CSS3, com layout responsivo e otimizado para diferentes tamanhos de ecrã.</p>
+                <a href="projecto2.png" target="_blank" class="btn-projeto">Ver Projeto</a>
+            </div>
+
+            <div class="card-servico">                 <!--projecto 3-->
+                <i class="fa-solid fa-file"></i>  
+                <h3>Gestão de Inventário (excel)</h3>
+                <p>Desenvolvimento de uma folha de cálculo automatizada para controlo de stocks, registo de vendas e cálculos financeiros automatizados.</p>
+                <a href="projecto3.xlsx" target="_blank" class="btn-projeto">Abrir Excel</a>
+            </div>
+        </div>
+    </section>
+
+<!--looooooooooopinnnnn-->    <div class="barra-listras"></div>     <!--fimmmmmmmm loopin-->
+
+    <section class="educacao" id="educacao">                  <!--section sobre formacao academica-->
+        <h2 class="titulo-seccao">Minha <span>Educação</span></h2> <!-- titulo da section education-->
+        <div class="servicos-grid">                                 <!-- Contentor em grelha para alinhar a formação académica--> 
+            <div class="card-servico">                              <!-- card da formação no ITC-->
+                <i class="fa-solid fa-graduation-cap"></i>         <!-- icon chapeu de graduação -->
+                <h3>Técnico de Suporte Informático</h3>
+                <p><strong>Instituição:</strong> Instituto de Transportes e Comunicações (ITC)</p>
+                <p>Conhecimentos em arquitetura de computadores, redes e suporte ao utilizador.</p>
+            </div>                                                 <!-- end do carao do ITC -->
+            
+            <div class="card-servico">                           <!-- cartao d'curso na Coursera-->
+                <!-- icone  certificado/diploma -->
+                <i class="fa-solid fa-certificate"></i>
+                <h3>Suporte Informático</h3>                      <!-- o curso-->
+                <p><strong>Plataforma:</strong> Coursera</p>
+                <p>Capacitação técnica em suporte ao cliente, redes de computadores, sistemas operativos e resolução de problemas tecnológicos.</p>
+            </div>                                                                          <!--fim do cartao Coursera-->
+
+            <div class="card-servico">                               <!-- Cartao com a formacao em Harvard-->
+                <i class="fa-solid fa-network-wired"></i>                <!--icone de redes e conectividade --> 
+                <h3>Redes de Computadores</h3>                           <!-- Nome do curso-->
+                <p><strong>Instituição:</strong> Harvard University</p>  <!-- Description-->
+                <p>Especialização em arquitetura de redes, protocolos de comunicação, segurança de dados e infraestrutura de conexões.</p>
+            </div>                                                                     <!--end do cartão de Harvard-->
+        </div>                                                                   <!--fim da grelha de educacao-->
+    </section>                <!--fim da seccao de educacao-->
+
+
+<!--loooooooopinnnnn-->     <div class="barra-listras"></div>         <!--fimmmmmmmm loopin-->
+
+    <section class="experiencia" id="experiencia">
+        <h2 class="titulo-seccao">Minha <span>Experiência</span></h2>
+        <div class="servicos-grid">                               <!--contentor em grelha para listar as experiencias-->
+            <div class="card-servico">                              <!-- card d'primeira experiencia-->
+                <i class="fa-solid fa-briefcase"></i>              <!--icone de pasta/maleta de trabalho-->
+                <h3>Técnico de TI / Estagiário</h3>
+                <p><strong>Empresa:</strong> Microsoft Co.</p>
+                <p>Resolução de problemas de rede, assistência aos funcionários e manutenção preventiva de computadores.</p>
+            </div>                                                 <!--end do cartao da 1a experiencia-->
+            
+            <div class="card-servico">                       <!-- cartao 2a experiencia profissional-->
+                <i class="fa-solid fa-user-gear"></i>          <!-- icone representativo de serviço técnico prestado-->
+                <h3>Prestador de Serviços Freelancer</h3>        <!--cargo/modelo do hustle-->
+                <p><strong>Atuação:</strong> Autónomo</p>
+                <p>Formatação de computadores, remoção de vírus e instalação de redes domésticas/comerciais.</p>
+            </div>                                           <!-- fim d'cartão da 2a experienc-->
+        </div>
+    </section>                                         <!--fim da seccao de experiencia --> 
+
+
+<!--looooooooooopinnnnn-->    <div class="barra-listras"></div>     <!--fimmmmmmmm loopin-->
+
+    <section class="contactos" id="contactos">     <!-- sect. formulario para envio de msg-->
+
+
+        <h2 class="titulo-seccao">Entre em <span>Contacto</span></h2>   <!-- Título da secção de contactos -->
+        <form action="https://formsubmit.co/ednevilmosley@gmail.com" method="POST">                                 <!-- Formulário de contacto usando método POST -->
+            <input type="hidden" name="_captcha" value="false">
+            
+            <label for="nome">Nome:</label>            <!-- rotulo do campo de mensagem -->
+            <input type="text" id="nome" name="nome" placeholder="Digite o seu nome completo" required>     <!--campo de entrada do tipo texto p/ o nome-->
+            
+            <label for="email">E-mail:</label>         <!--rotulo d'email-->
+            <input type="email" id="email" name="email" placeholder="Digite o seu endereço de e-mail" required>   <!-- campo de entrada do tipo email com validação de formato automática-->
+           
+            <label for="mensagem">Mensagem:</label>     <!-- rotulo d'mensagem-->
+            <textarea id="mensagem" name="mensagem" rows="3" placeholder="Mande-me uma mensagem" required></textarea>    <!-- area de texto de multiplas linhas para a mensagem-->
+        
+            <button type="submit" class="btn-submit">Enviar Mensagem</button>   <!--botao p/ submeter o formulario-->
+
+            <!--heresssssss-->
+
+          <section class="estatisticas">
+    <div class="servicos-grid">
+
+        <div class="card-servico">
+            <i class="fa-solid fa-laptop-medical"></i>
+            <h2 class="numero-estatistica">7+</h2>
+            <p>Manutenções Realizadas</p>
+        </div>
+
+        <div class="card-servico">
+            <i class="fa-solid fa-check-double"></i>
+            <h2 class="numero-estatistica">100%</h2>
+            <p>Taxa de Sucesso em S.O</p>
+        </div>
+
+        <div class="card-servico">
+            <i class="fa-solid fa-diagram-project"></i>
+            <h2 class="numero-estatistica">3+</h2>
+            <p>Projetos & Redes</p>
+        </div>
+    </div>
+</section>                     <!--fim fim-->
+
+
+        </form>            <!-- the end do form-->
+    </section>         <!-- Fim da seccao de contacts-->
+
+                                        <hr class="barra">    
+    
+    <div>
+        <footer class="footer">
+            &copy; Ednevil Mosley Edgar Cuna
+            <br>
+            Cell: +258848749094 & +258870356922
+            <br>
+            <i class="fa-solid fa-envelope"></i> email: mosleycuna@gmail.com
+        </footer>
+    </div>
+</body>
+</html>
